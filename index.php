@@ -18,8 +18,7 @@
 <body>
     
     <div id="timer"></div>
-    <div id="pane
-    "></div>
+    <div id="pane"></div>
 
 <p>hi</p>
 
