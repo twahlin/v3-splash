@@ -1,0 +1,128 @@
+//------------------------------------------------------------------
+//Globals
+//------------------------------------------------------------------
+
+html {
+    background: #eee image-url('bg_light_source.jpg') top no-repeat;
+    color: #333;    
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    overflow-y : scroll;
+    
+    -webkit-font-smoothing: antialiased;    
+}
+
+//Opera Fix for sticky footer
+body:before {
+    content:"";
+    height: 100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;
+}
+
+a,
+a:visited {
+    color: $blue;
+}
+
+h2, h3, h4, h5, h6 {
+    @include proxima_regular;
+    @include white_text_shadow_bottom;
+}
+
+h2 { 
+    color: #666;
+    font-size: 60px;
+    line-height: 72px;
+    padding: 2.4% 0 0 2.4%; 
+}
+
+h5 {
+    border-bottom: 1px solid #bbb;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 11px;
+    padding-bottom: 5px;
+      
+    @include proxima_light;
+    @include white_box_shadow_bottom;      
+}
+
+h6 {
+    font-family: "Helvetica Neue", Arial, sans-serif;	
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 9px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 9px;
+}
+
+.wrap {
+    background: image-url('bg_noise_transparent.png') center;
+    min-height: 100%;
+}
+
+//------------------------------------------------------------------
+//Logo
+//------------------------------------------------------------------
+
+h1 {
+	cursor: pointer;
+    height: 90px;
+    left: 50%;
+    margin: -50px 0 0 -50px;    
+    position: absolute;
+    top: 50%;
+    width: 90px;
+    z-index: 101;
+    
+	@include border-radius(80px);
+}
+
+h1 a {
+    background: #fff;
+    display: block;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    text-indent: -6666px;
+    width: 100px;
+    
+	@include background(linear-gradient(rgba(white, 1), rgba(221,221,221, 1)));
+	@include border-radius(80px);
+	@include box-shadow(rgba(34, 34, 34, .7) 0 5px 5px, rgba(34, 34, 34, .2) 0 0 5px);
+	@include transition-property(box-shadow);
+  	@include transition-duration(0.3s);
+  	@include transition-timing-function(ease-in);
+}
+
+h1 a:hover,
+h1 a:focus {
+    background: #f0f0f0;
+
+	@include background(linear-gradient(rgba(255, 255, 255, 1), rgba(200, 200, 200, 1)));
+	@include box-shadow(rgba(34, 34, 34, .7) 0 5px 5px, rgba(34, 34, 34, .2) 0 0 5px, rgba(108, 173, 223, .5) 2px 4px 20px, rgba(108, 173, 223, .25) -9px -4px 20px);    
+}
+
+h1 a:active {
+    margin-top: 1px;
+
+    @include box-shadow(rgba(34, 34, 34, .7) 0 3px 3px, rgba(34, 34, 34, .1) 0 0 5px, rgba(108, 173, 223, .65) 2px 4px 25px, rgba(108, 173, 223, .25) 2px -4px 25px, rgba(108, 173, 223, .1) 0 0 40px, rgba(108, 173, 223, .4) -9px -4px 30px);  
+    @include transition-property(box-shadow);
+  	@include transition-duration(0.01s);
+  	@include transition-timing-function(ease-in);
+}
+
+h1 a span {
+    background: image-url('png_master_sprite.png') 18px 31px;     
+    display: block;
+	position: relative;
+    height: 100px;
+    width: 100px;
+    
+    @include border-radius(50px);
+}

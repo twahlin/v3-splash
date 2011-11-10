@@ -1,0 +1,100 @@
+//------------------------------------------------------------------
+//Typography
+//------------------------------------------------------------------
+
+$proxima_stack: "proxima-nova-1","proxima-nova-2", "Helvetica Neue", Arial, sans-serif;
+
+@mixin proxima_thin { font-family: $proxima_stack; font-weight: 100; font-style: normal; }
+@mixin proxima_thin_italic { font-family: $proxima_stack; font-weight: 100; font-style: italic; }
+@mixin proxima_light { font-family: $proxima_stack; font-weight: 300; font-style: normal; }
+@mixin proxima_light_italic { font-family: $proxima_stack; font-weight: 300; font-style: italic; }
+@mixin proxima_regular { font-family: $proxima_stack; font-weight: 400; font-style: normal; }
+@mixin proxima_regular_italic { font-family: $proxima_stack; font-weight: 400; font-style: italic; }
+@mixin proxima_semibold { font-family: $proxima_stack; font-weight: 600; font-style: normal; }
+@mixin proxima_semibold_italic { font-family: $proxima_stack; font-weight: 600; font-style: italic; }
+@mixin proxima_bold { font-family: $proxima_stack; font-weight: 700; font-style: normal; }
+@mixin proxima_bold_italic { font-family: $proxima_stack; font-weight: 700; font-style: italic; }
+@mixin proxima_extrabold { font-family: $proxima_stack; font-weight: 800; font-style: normal; }
+@mixin proxima_extrabold_italic { font-family: $proxima_stack; font-weight: 800; font-style: italic; }
+@mixin proxima_black { font-family: $proxima_stack; font-weight: 900; font-style: normal; }
+@mixin proxima_black_italic { font-family: $proxima_stack; font-weight: 900; font-style: italic; }
+
+
+@mixin white_text_shadow_bottom { @include text-shadow(#fff 0 1px 0); }
+@mixin white_text_shadow_top { @include text-shadow(#fff 0 -1px 0); }
+@mixin black_text_shadow_bottom { @include text-shadow(#000 0 1px 0); }
+@mixin black_text_shadow_top { @include text-shadow(#000 0 -1px 0); }
+@mixin blue_text_shadow_top { @include text-shadow(#4c88b6 0 -1px 1px); }
+@mixin blue_text_shadow_bottom { @include text-shadow(#4c88b6 0 1px 1px); }
+
+//------------------------------------------------------------------
+//Colors
+//------------------------------------------------------------------
+
+$blue: #6caddf;
+$hover_blue: #8acbfc;
+
+//wcag compliant
+$link_blue: #00538e;
+
+@mixin gradient_solid_standard { @include background(linear-gradient(rgba(153,204,245, 1), rgba(129,181,220, 1))); }
+@mixin gradient_solid_hover { @include background(linear-gradient(rgba(163,214,255, 1), rgba(139,191,230, 1))); }
+@mixin gradient_solid_active { @include background(linear-gradient(rgba(139,191,230, 1), rgba(163,214,255, 1))); }
+
+//------------------------------------------------------------------
+//Shadows
+//------------------------------------------------------------------
+
+@mixin white_box_shadow_bottom { @include box-shadow(rgba(255, 255, 255, 1) 0 1px 0); }
+@mixin white_box_shadow_top_inset { @include box-shadow(inset rgba(255, 255, 255, 1) 0 1px 0); }
+@mixin default_container_shadow { @include box-shadow(rgba(0, 0, 0, .2) 0 1px 5px); }
+@mixin default_container_shadow_hover { @include box-shadow(rgba(0, 0, 0, .5) 0 1px 6px); }
+@mixin default_container_inner_shadow { @include box-shadow(inset rgba(0, 0, 0, .25) 0 1px 6px) }
+@mixin default_container_inner_shadow_hover { @include box-shadow(inset rgba(0, 0, 0, .4) 0 1px 6px) }
+
+//------------------------------------------------------------------
+//Transition
+//------------------------------------------------------------------
+
+@mixin transition_default { @include transition-property(all); @include transition-duration(0.3s); @include transition-timing-function(ease-in); }
+
+//------------------------------------------------------------------
+//Buttons
+//------------------------------------------------------------------
+
+@mixin button_hover { 
+    background: $hover_blue;
+    @include box-shadow(rgba(0, 0, 0, .35) 0 0 8px, inset rgba(220, 243, 255, 1) 0 1px 0);
+    @include gradient_solid_hover;
+}
+
+@mixin button {
+    border: 1px solid #6f9dc0;
+    background: $blue;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 12px 6px 12px;
+    line-height: 34px;
+    
+    @include border-radius (3px);
+    @include box-shadow(rgba(0, 0, 0, .2) 0 0 8px, inset rgba(207, 233, 254, 1) 0 1px 0);
+    @include gradient_solid_standard;
+    @include proxima_regular;
+    @include blue_text_shadow_top;
+    @include transition_default;
+}
+
+@mixin button_active {
+    @include gradient_solid_active;
+}
+
+//------------------------------------------------------------------
+//Box Model
+//------------------------------------------------------------------
+
+@mixin global_wrap_margin { margin: 2.4%; }
+
+@mixin global_wrap_margin_left_right { margin: 0 2.4%; }
+
+
+
