@@ -1,1 +1,45 @@
 @import url("reset.css");
+
+.experience-container {
+  width:400px;
+  border-top:10px solid #eee;
+  border-bottom:10px solid #eee;
+  margin:20px auto;
+}
+
+#pane {
+  width:200px;
+  margin:0 auto;
+}
+
+#timer ul {
+  padding:20px 0;
+  margin: 0 auto;
+  width:130px;
+}
+
+#timer ul li  {
+  margin-bottom:20px;
+  line-height:1em;
+  font-family: Baskerville, Times, “Times New Roman”, serif;
+}
+
+#timer .days {
+  font-size:2em;
+  color:#000;
+}
+
+#timer .hours {
+  font-size:1.5em;
+  color:#333;
+}
+
+#timer .minutes {
+  font-size:1.2em;
+  color:#666;
+}
+
+#timer .seconds {
+  font-size:1em;
+  color:#999;
+}
