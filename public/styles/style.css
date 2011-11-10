@@ -165,15 +165,32 @@ p {
 
 /* line 73, ../scss/_320.scss */
 .experience_container {
-  background: #fff;
-  height: 400px;
+  background: white url('../images/bg_diagonal_lines.png?1320934002') center;
+  border: 1px solid #fff;
+  height: 320px;
   margin: 0 auto;
   position: relative;
-  width: 400px;
+  width: 320px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 8px;
+  -o-box-shadow: rgba(0, 0, 0, 0.4) 0 0 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 8px;
 }
 
-/* line 85, ../scss/_320.scss */
+/* line 84, ../scss/_320.scss */
+.pane {
+  display: block;
+  height: 200px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  margin: -100px 0 0 -100px;
+  width: 200px;
+}
+
+/* line 98, ../scss/_320.scss */
 h1 {
+  background: transparent;
   cursor: pointer;
   height: 90px;
   left: 50%;
@@ -182,15 +199,9 @@ h1 {
   top: 50%;
   width: 90px;
   z-index: 101;
-  -moz-border-radius: 80px;
-  -webkit-border-radius: 80px;
-  -o-border-radius: 80px;
-  -ms-border-radius: 80px;
-  -khtml-border-radius: 80px;
-  border-radius: 80px;
 }
 
-/* line 98, ../scss/_320.scss */
+/* line 110, ../scss/_320.scss */
 h1 a {
   background: #fff;
   display: block;
@@ -229,7 +240,7 @@ h1 a {
   transition-timing-function: ease-in;
 }
 
-/* line 116, ../scss/_320.scss */
+/* line 128, ../scss/_320.scss */
 h1 a:hover,
 h1 a:focus {
   background: #f0f0f0;
@@ -245,7 +256,7 @@ h1 a:focus {
   box-shadow: rgba(34, 34, 34, 0.7) 0 5px 5px, rgba(34, 34, 34, 0.2) 0 0 5px, rgba(108, 173, 223, 0.5) 2px 4px 20px, rgba(108, 173, 223, 0.25) -9px -4px 20px;
 }
 
-/* line 123, ../scss/_320.scss */
+/* line 135, ../scss/_320.scss */
 h1 a:active {
   margin-top: 1px;
   -moz-box-shadow: rgba(34, 34, 34, 0.7) 0 3px 3px, rgba(34, 34, 34, 0.1) 0 0 5px, rgba(108, 173, 223, 0.65) 2px 4px 25px, rgba(108, 173, 223, 0.25) 2px -4px 25px, rgba(108, 173, 223, 0.1) 0 0 40px, rgba(108, 173, 223, 0.4) -9px -4px 30px;
@@ -266,9 +277,9 @@ h1 a:active {
   transition-timing-function: ease-in;
 }
 
-/* line 132, ../scss/_320.scss */
+/* line 144, ../scss/_320.scss */
 h1 a span {
-  background: url('../images/png_splash_sprite.png?1320935185') 18px 31px;
+  background: url('../images/png_splash_sprite.png?1320941794') 18px 31px;
   display: block;
   position: relative;
   height: 100px;
@@ -300,7 +311,7 @@ h1 a span {
 
   /* line 19, ../scss/_768.scss */
   .links_social li a {
-    background: url('../images/png_splash_sprite.png?1320935185');
+    background: url('../images/png_splash_sprite.png?1320941794');
     display: block;
     height: 0;
     overflow: hidden;

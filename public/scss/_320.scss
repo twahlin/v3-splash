@@ -71,11 +71,24 @@ p {
 //------------------------------------------------------------------
 
 .experience_container {
-    background: #fff;
-    height: 400px;
+    background: #fff image-url('bg_diagonal_lines.png') center;
+    border: 1px solid #fff;
+    height: 320px;
     margin: 0 auto;
     position: relative;
-    width: 400px;
+    width: 320px;
+    
+	@include box-shadow(rgba(0, 0, 0, 0.4) 0 0 8px);    
+}
+
+.pane {
+    display: block;
+    height: 200px;
+    left: 50%;   
+    position: absolute;     
+    top: 50%;    
+    margin: -100px 0 0 -100px; 
+    width: 200px;
 }
 
 //------------------------------------------------------------------
@@ -83,6 +96,7 @@ p {
 //------------------------------------------------------------------
 
 h1 {
+    background: transparent;
 	cursor: pointer;
     height: 90px;
     left: 50%;
@@ -91,8 +105,6 @@ h1 {
     top: 50%;
     width: 90px;
     z-index: 101;
-    
-	@include border-radius(80px);
 }
 
 h1 a {
@@ -138,5 +150,43 @@ h1 a span {
     
     @include border-radius(50px);
 }
+
+//------------------------------------------------------------------
+//Timer
+//------------------------------------------------------------------
+
+.timer {
+    
+}
+
+.timer li {
+    
+}
+
+.timer li em {
+    
+}
+
+.timer .days {
+
+}
+
+.timer .hours {
+    
+}
+
+.timer .minutes {
+
+}
+
+.timer .seconds {
+
+}
+
+
+
+
+
+
 
 

@@ -25,9 +25,9 @@
       </div>
     </div>    
     <div class="pane_wrapper">
-      <div id="pane"></div>
+      <div id="pane" class="pane"></div>
     </div>
-    <div id="timer"><noscript>Version 3 of <a href="http://tomwahlin.com">Tomwahlin.com</a> will launch on 12.11.2011</noscript></div>
+    <div id="timer" class="timer"><noscript>Version 3 of <a href="http://tomwahlin.com">Tomwahlin.com</a> will launch on 12.11.2011</noscript></div>
     <ul class="links_social">
        <li class="dribbble"><a rel="external" title="Visit Tom Wahlin&rsquo;s Dribbble" href="http://dribbble.com/twahlin"><em class="button">Dribbble </em><span>View Shots on Dribbble</span></a></li>
        <li class="facebook"><a rel="external" title="Visit Tom Wahlin&rsquo;s Facebook" href="http://www.facebook.com/twahlin"><em class="button">Facebook </em><span>Friend on Facebook</span></a></li>
