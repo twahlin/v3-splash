@@ -67,6 +67,18 @@ p {
 }
 
 //------------------------------------------------------------------
+//Main Container
+//------------------------------------------------------------------
+
+.experience_container {
+    background: #fff;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    width: 400px;
+}
+
+//------------------------------------------------------------------
 //Logo
 //------------------------------------------------------------------
 
@@ -118,7 +130,7 @@ h1 a:active {
 }
 
 h1 a span {
-    background: image-url('png_master_sprite.png') 18px 31px;     
+    background: image-url('png_splash_sprite.png') 18px 31px;     
     display: block;
 	position: relative;
     height: 100px;
@@ -126,3 +138,5 @@ h1 a span {
     
     @include border-radius(50px);
 }
+
+
