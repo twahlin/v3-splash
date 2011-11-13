@@ -39,7 +39,7 @@
         }
 
         var update = setInterval(function() {
-          obj.animate({arc: [100, 100, timer.get_arc_radius(), 100, 80]}, types[type]);  
+          obj.animate({arc: [100, 100, timer.get_arc_radius(), 100, 90]}, types[type]);  
         }, types[type])
       },
       //
@@ -51,7 +51,7 @@
 
         //http://stackoverflow.com/questions/5061318/drawing-centered-arcs-in-raphael-js
         //make an arc at 50,50 with a radius of 30 that grows from 0 to 40 of 100 with a bounce
-        var my_arc = archtype.path().attr({"stroke": "#6caddf", "stroke-width": 10, arc: [100, 100, timer.get_arc_radius(), 100, 80]});
+        var my_arc = archtype.path().attr({"stroke": "#6caddf", "stroke-width": 18, arc: [100, 100, timer.get_arc_radius(), 100, 90]});
         timer.update_based_on('seconds', my_arc)
       },
       //

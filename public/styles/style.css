@@ -188,7 +188,31 @@ p {
   width: 200px;
 }
 
-/* line 98, ../scss/_320.scss */
+/* line 95, ../scss/_320.scss */
+.pane:before,
+.pane:after {
+  background: url('../images/png_splash_sprite.png?1321223591');
+  content: "";
+  display: block;
+  height: 236px;
+  left: -19px;
+  position: absolute;
+  top: -18px;
+  width: 236px;
+}
+
+/* line 106, ../scss/_320.scss */
+.pane:before {
+  background-position: -491px -13px;
+}
+
+/* line 110, ../scss/_320.scss */
+.pane:after {
+  background-position: -224px -13px;
+  z-index: 1;
+}
+
+/* line 119, ../scss/_320.scss */
 h1 {
   background: transparent;
   cursor: pointer;
@@ -201,7 +225,7 @@ h1 {
   z-index: 101;
 }
 
-/* line 110, ../scss/_320.scss */
+/* line 131, ../scss/_320.scss */
 h1 a {
   background: #fff;
   display: block;
@@ -240,7 +264,7 @@ h1 a {
   transition-timing-function: ease-in;
 }
 
-/* line 128, ../scss/_320.scss */
+/* line 149, ../scss/_320.scss */
 h1 a:hover,
 h1 a:focus {
   background: #f0f0f0;
@@ -256,7 +280,7 @@ h1 a:focus {
   box-shadow: rgba(34, 34, 34, 0.7) 0 5px 5px, rgba(34, 34, 34, 0.2) 0 0 5px, rgba(108, 173, 223, 0.5) 2px 4px 20px, rgba(108, 173, 223, 0.25) -9px -4px 20px;
 }
 
-/* line 135, ../scss/_320.scss */
+/* line 156, ../scss/_320.scss */
 h1 a:active {
   margin-top: 1px;
   -moz-box-shadow: rgba(34, 34, 34, 0.7) 0 3px 3px, rgba(34, 34, 34, 0.1) 0 0 5px, rgba(108, 173, 223, 0.65) 2px 4px 25px, rgba(108, 173, 223, 0.25) 2px -4px 25px, rgba(108, 173, 223, 0.1) 0 0 40px, rgba(108, 173, 223, 0.4) -9px -4px 30px;
@@ -277,9 +301,9 @@ h1 a:active {
   transition-timing-function: ease-in;
 }
 
-/* line 144, ../scss/_320.scss */
+/* line 165, ../scss/_320.scss */
 h1 a span {
-  background: url('../images/png_splash_sprite.png?1320977391') 18px 31px;
+  background: url('../images/png_splash_sprite.png?1321223591') 18px 31px;
   display: block;
   position: relative;
   height: 100px;
@@ -292,127 +316,125 @@ h1 a span {
   border-radius: 50px;
 }
 
-/* line 158, ../scss/_320.scss */
+/* line 179, ../scss/_320.scss */
 .timer {
   padding-top: 300px;
 }
 
-/* line 162, ../scss/_320.scss */
+/* line 183, ../scss/_320.scss */
 .timer li {
   float: left;
 }
 
-@media only screen and (min-width: 768px) {
-  /* line 5, ../scss/_768.scss */
-  .links_social {
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    left: -36px;
-    padding-left: 6px;
-    top: 10%;
-    width: 29px;
-  }
+/* line 211, ../scss/_320.scss */
+.links_social {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: -36px;
+  padding-left: 6px;
+  top: 10%;
+  width: 29px;
+}
 
-  /* line 15, ../scss/_768.scss */
-  .links_social li {
-    margin: 0 0 2px 0;
-  }
+/* line 221, ../scss/_320.scss */
+.links_social li {
+  margin: 0 0 2px 0;
+}
 
-  /* line 19, ../scss/_768.scss */
-  .links_social li a {
-    background: url('../images/png_splash_sprite.png?1320977391');
-    display: block;
-    height: 0;
-    overflow: hidden;
-    padding-top: 28px;
-    position: relative;
-    width: 42px;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-    opacity: 0.4;
-    -moz-transition-property: margin;
-    -webkit-transition-property: margin;
-    -o-transition-property: margin;
-    transition-property: margin;
-    -moz-transition-duration: 0.1s;
-    -webkit-transition-duration: 0.1s;
-    -o-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-    -moz-transition-timing-function: ease-in;
-    -webkit-transition-timing-function: ease-in;
-    -o-transition-timing-function: ease-in;
-    transition-timing-function: ease-in;
-  }
+/* line 225, ../scss/_320.scss */
+.links_social li a {
+  background: url('../images/png_splash_sprite.png?1321223591');
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-top: 28px;
+  position: relative;
+  width: 42px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+  -moz-transition-property: margin;
+  -webkit-transition-property: margin;
+  -o-transition-property: margin;
+  transition-property: margin;
+  -moz-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
 
-  /* line 34, ../scss/_768.scss */
-  .links_social li a em {
-    display: none;
-  }
+/* line 240, ../scss/_320.scss */
+.links_social li a em {
+  display: none;
+}
 
-  /* line 39, ../scss/_768.scss */
-  .links_social li a:hover {
-    margin-left: -3px;
-    opacity: 1;
-  }
+/* line 245, ../scss/_320.scss */
+.links_social li a:hover {
+  margin-left: -3px;
+  opacity: 1;
+}
 
-  /* line 44, ../scss/_768.scss */
-  .links_social li.linkedin a {
-    background-position: -153px -1px;
-  }
+/* line 250, ../scss/_320.scss */
+.links_social li.linkedin a {
+  background-position: -153px -1px;
+}
 
-  /* line 45, ../scss/_768.scss */
-  .links_social li.facebook a {
-    background-position: -153px -30px;
-  }
+/* line 251, ../scss/_320.scss */
+.links_social li.facebook a {
+  background-position: -153px -30px;
+}
 
-  /* line 46, ../scss/_768.scss */
-  .links_social li.flickr a {
-    background-position: -153px -59px;
-  }
+/* line 252, ../scss/_320.scss */
+.links_social li.flickr a {
+  background-position: -153px -59px;
+}
 
-  /* line 47, ../scss/_768.scss */
-  .links_social li.twitter a {
-    background-position: -153px -88px;
-  }
+/* line 253, ../scss/_320.scss */
+.links_social li.twitter a {
+  background-position: -153px -88px;
+}
 
-  /* line 48, ../scss/_768.scss */
-  .links_social li.last_fm a {
-    background-position: -153px -117px;
-  }
+/* line 254, ../scss/_320.scss */
+.links_social li.last_fm a {
+  background-position: -153px -117px;
+}
 
-  /* line 49, ../scss/_768.scss */
-  .links_social li.dribbble a {
-    background-position: -153px -146px;
-  }
+/* line 255, ../scss/_320.scss */
+.links_social li.dribbble a {
+  background-position: -153px -146px;
+}
 
-  /* line 51, ../scss/_768.scss */
-  .links_social li.linkedin a:hover {
-    background-position: -104px -1px;
-  }
+/* line 257, ../scss/_320.scss */
+.links_social li.linkedin a:hover {
+  background-position: -104px -1px;
+}
 
-  /* line 52, ../scss/_768.scss */
-  .links_social li.facebook a:hover {
-    background-position: -104px -30px;
-  }
+/* line 258, ../scss/_320.scss */
+.links_social li.facebook a:hover {
+  background-position: -104px -30px;
+}
 
-  /* line 53, ../scss/_768.scss */
-  .links_social li.flickr a:hover {
-    background-position: -104px -59px;
-  }
+/* line 259, ../scss/_320.scss */
+.links_social li.flickr a:hover {
+  background-position: -104px -59px;
+}
 
-  /* line 54, ../scss/_768.scss */
-  .links_social li.twitter a:hover {
-    background-position: -104px -88px;
-  }
+/* line 260, ../scss/_320.scss */
+.links_social li.twitter a:hover {
+  background-position: -104px -88px;
+}
 
-  /* line 55, ../scss/_768.scss */
-  .links_social li.last_fm a:hover {
-    background-position: -104px -117px;
-  }
+/* line 261, ../scss/_320.scss */
+.links_social li.last_fm a:hover {
+  background-position: -104px -117px;
+}
 
-  /* line 56, ../scss/_768.scss */
-  .links_social li.dribbble a:hover {
-    background-position: -104px -146px;
-  }
+/* line 262, ../scss/_320.scss */
+.links_social li.dribbble a:hover {
+  background-position: -104px -146px;
 }
