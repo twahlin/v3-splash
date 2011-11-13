@@ -88,7 +88,7 @@ abbr[title] {
 
 /* line 5, ../scss/_320.scss */
 html {
-  background: #eeeeee url('../images/bg_light_source.jpg?1320934002') top no-repeat;
+  background: #eeeeee url('../images/bg_light_source.jpg?1314749898') top no-repeat;
   color: #333;
   font-family: "Helvetica Neue", Arial, sans-serif;
   overflow-y: scroll;
@@ -159,13 +159,13 @@ p {
 
 /* line 64, ../scss/_320.scss */
 .wrap {
-  background: url('../images/bg_noise_transparent.png?1320934002') center;
+  background: url('../images/bg_noise_transparent.png?1314749898') center;
   min-height: 100%;
 }
 
 /* line 73, ../scss/_320.scss */
 .experience_container {
-  background: white url('../images/bg_diagonal_lines.png?1320934002') center;
+  background: #fefefe url('../images/bg_diagonal_lines.png?1314749898') center;
   border: 1px solid #fff;
   height: 320px;
   margin: 0 auto;
@@ -279,7 +279,7 @@ h1 a:active {
 
 /* line 144, ../scss/_320.scss */
 h1 a span {
-  background: url('../images/png_splash_sprite.png?1320941794') 18px 31px;
+  background: url('../images/png_splash_sprite.png?1320977391') 18px 31px;
   display: block;
   position: relative;
   height: 100px;
@@ -292,15 +292,25 @@ h1 a span {
   border-radius: 50px;
 }
 
+/* line 158, ../scss/_320.scss */
+.timer {
+  padding-top: 300px;
+}
+
+/* line 162, ../scss/_320.scss */
+.timer li {
+  float: left;
+}
+
 @media only screen and (min-width: 768px) {
   /* line 5, ../scss/_768.scss */
   .links_social {
     display: block;
     overflow: hidden;
     position: absolute;
-    left: -35px;
+    left: -36px;
     padding-left: 6px;
-    top: -2px;
+    top: 10%;
     width: 29px;
   }
 
@@ -311,13 +321,14 @@ h1 a span {
 
   /* line 19, ../scss/_768.scss */
   .links_social li a {
-    background: url('../images/png_splash_sprite.png?1320941794');
+    background: url('../images/png_splash_sprite.png?1320977391');
     display: block;
     height: 0;
     overflow: hidden;
     padding-top: 28px;
     position: relative;
     width: 42px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
     opacity: 0.4;
     -moz-transition-property: margin;

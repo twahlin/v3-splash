@@ -71,7 +71,7 @@ p {
 //------------------------------------------------------------------
 
 .experience_container {
-    background: #fff image-url('bg_diagonal_lines.png') center;
+    background: #fefefe image-url('bg_diagonal_lines.png') center;
     border: 1px solid #fff;
     height: 320px;
     margin: 0 auto;
@@ -156,11 +156,11 @@ h1 a span {
 //------------------------------------------------------------------
 
 .timer {
-    
+  padding-top: 300px;
 }
 
 .timer li {
-    
+ float: left;    
 }
 
 .timer li em {
