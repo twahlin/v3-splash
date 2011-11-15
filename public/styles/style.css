@@ -161,23 +161,88 @@ p {
 .wrap {
   background: url('../images/bg_noise_transparent.png?1314749898') center;
   min-height: 100%;
+  padding-top: 180px;
 }
 
-/* line 73, ../scss/_320.scss */
+/* line 74, ../scss/_320.scss */
+.v2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* line 81, ../scss/_320.scss */
+.v2 a {
+  background: url('../images/png_splash_sprite.png?1321366081') -82px -270px;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-top: 155px;
+  width: 155px;
+}
+
+/* line 95, ../scss/_320.scss */
+.pane_wrapper:before,
+.pane_wrapper:after {
+  background: rgba(0, 0, 0, 0.4);
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 1px;
+  bottom: 5px;
+  width: 20%;
+  max-width: 300px;
+  height: 60%;
+  -moz-transform: skew(-18deg) rotate(-16deg);
+  -webkit-transform: skew(-18deg) rotate(-16deg);
+  -o-transform: skew(-18deg) rotate(-16deg);
+  -ms-transform: skew(-18deg) rotate(-16deg);
+  transform: skew(-18deg) rotate(-16deg);
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 20px 30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 20px 30px;
+  -o-box-shadow: rgba(0, 0, 0, 0.8) 0 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 20px 30px;
+}
+
+/* line 110, ../scss/_320.scss */
+.pane_wrapper:after {
+  left: auto;
+  right: 1px;
+  -moz-transform: skew(18deg) rotate(16deg);
+  -webkit-transform: skew(18deg) rotate(16deg);
+  -o-transform: skew(18deg) rotate(16deg);
+  -ms-transform: skew(18deg) rotate(16deg);
+  transform: skew(18deg) rotate(16deg);
+}
+
+/* line 117, ../scss/_320.scss */
 .experience_container {
   background: #fefefe url('../images/bg_diagonal_lines.png?1314749898') center;
-  border: 1px solid #fff;
-  height: 320px;
+  border: 8px solid #fff;
+  height: 370px;
   margin: 0 auto;
   position: relative;
-  width: 320px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 8px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 8px;
-  -o-box-shadow: rgba(0, 0, 0, 0.4) 0 0 8px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0 0 8px;
+  width: 370px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 8px, inset rgba(0, 0, 0, 0.25) 0 1px 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 8px, inset rgba(0, 0, 0, 0.25) 0 1px 3px;
+  -o-box-shadow: rgba(0, 0, 0, 0.4) 0 2px 8px, inset rgba(0, 0, 0, 0.25) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 8px, inset rgba(0, 0, 0, 0.25) 0 1px 3px;
+  background: url('../images/bg_diagonal_lines.png?1314749898'), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background: url('../images/bg_diagonal_lines.png?1314749898'), -webkit-radial-gradient(#ffffff, #e6e6e6 500px);
+  background: url('../images/bg_diagonal_lines.png?1314749898'), -moz-radial-gradient(#ffffff, #e6e6e6 500px);
+  background: url('../images/bg_diagonal_lines.png?1314749898'), -o-radial-gradient(#ffffff, #e6e6e6 500px);
+  background: url('../images/bg_diagonal_lines.png?1314749898'), -ms-radial-gradient(#ffffff, #e6e6e6 500px);
+  background: url('../images/bg_diagonal_lines.png?1314749898'), radial-gradient(#ffffff, #e6e6e6 500px);
 }
 
-/* line 84, ../scss/_320.scss */
+/*.experience_container:before {
+     background: aqua;
+     content: "";
+     display: block;
+     width: 100%;
+     height: 100%;
+}*/
+/* line 137, ../scss/_320.scss */
 .pane {
   display: block;
   height: 200px;
@@ -188,10 +253,10 @@ p {
   width: 200px;
 }
 
-/* line 95, ../scss/_320.scss */
+/* line 148, ../scss/_320.scss */
 .pane:before,
 .pane:after {
-  background: url('../images/png_splash_sprite.png?1321223591');
+  background: url('../images/png_splash_sprite.png?1321366081');
   content: "";
   display: block;
   height: 236px;
@@ -201,18 +266,18 @@ p {
   width: 236px;
 }
 
-/* line 106, ../scss/_320.scss */
+/* line 159, ../scss/_320.scss */
 .pane:before {
   background-position: -491px -13px;
 }
 
-/* line 110, ../scss/_320.scss */
+/* line 163, ../scss/_320.scss */
 .pane:after {
   background-position: -224px -13px;
   z-index: 1;
 }
 
-/* line 119, ../scss/_320.scss */
+/* line 172, ../scss/_320.scss */
 h1 {
   background: transparent;
   cursor: pointer;
@@ -225,7 +290,7 @@ h1 {
   z-index: 101;
 }
 
-/* line 131, ../scss/_320.scss */
+/* line 184, ../scss/_320.scss */
 h1 a {
   background: #fff;
   display: block;
@@ -264,7 +329,7 @@ h1 a {
   transition-timing-function: ease-in;
 }
 
-/* line 149, ../scss/_320.scss */
+/* line 202, ../scss/_320.scss */
 h1 a:hover,
 h1 a:focus {
   background: #f0f0f0;
@@ -280,7 +345,7 @@ h1 a:focus {
   box-shadow: rgba(34, 34, 34, 0.7) 0 5px 5px, rgba(34, 34, 34, 0.2) 0 0 5px, rgba(108, 173, 223, 0.5) 2px 4px 20px, rgba(108, 173, 223, 0.25) -9px -4px 20px;
 }
 
-/* line 156, ../scss/_320.scss */
+/* line 209, ../scss/_320.scss */
 h1 a:active {
   margin-top: 1px;
   -moz-box-shadow: rgba(34, 34, 34, 0.7) 0 3px 3px, rgba(34, 34, 34, 0.1) 0 0 5px, rgba(108, 173, 223, 0.65) 2px 4px 25px, rgba(108, 173, 223, 0.25) 2px -4px 25px, rgba(108, 173, 223, 0.1) 0 0 40px, rgba(108, 173, 223, 0.4) -9px -4px 30px;
@@ -301,9 +366,9 @@ h1 a:active {
   transition-timing-function: ease-in;
 }
 
-/* line 165, ../scss/_320.scss */
+/* line 218, ../scss/_320.scss */
 h1 a span {
-  background: url('../images/png_splash_sprite.png?1321223591') 18px 31px;
+  background: url('../images/png_splash_sprite.png?1321366081') 18px 31px;
   display: block;
   position: relative;
   height: 100px;
@@ -316,35 +381,35 @@ h1 a span {
   border-radius: 50px;
 }
 
-/* line 179, ../scss/_320.scss */
+/* line 232, ../scss/_320.scss */
 .timer {
   padding-top: 300px;
 }
 
-/* line 183, ../scss/_320.scss */
+/* line 236, ../scss/_320.scss */
 .timer li {
   float: left;
 }
 
-/* line 211, ../scss/_320.scss */
+/* line 264, ../scss/_320.scss */
 .links_social {
   display: block;
   overflow: hidden;
   position: absolute;
-  left: -36px;
+  left: -44px;
   padding-left: 6px;
-  top: 10%;
+  top: 5%;
   width: 29px;
 }
 
-/* line 221, ../scss/_320.scss */
+/* line 274, ../scss/_320.scss */
 .links_social li {
   margin: 0 0 2px 0;
 }
 
-/* line 225, ../scss/_320.scss */
+/* line 278, ../scss/_320.scss */
 .links_social li a {
-  background: url('../images/png_splash_sprite.png?1321223591');
+  background: url('../images/png_splash_sprite.png?1321366081');
   display: block;
   height: 0;
   overflow: hidden;
@@ -368,73 +433,169 @@ h1 a span {
   transition-timing-function: ease-in;
 }
 
-/* line 240, ../scss/_320.scss */
+/* line 293, ../scss/_320.scss */
 .links_social li a em {
   display: none;
 }
 
-/* line 245, ../scss/_320.scss */
+/* line 298, ../scss/_320.scss */
 .links_social li a:hover {
   margin-left: -3px;
   opacity: 1;
 }
 
-/* line 250, ../scss/_320.scss */
+/* line 303, ../scss/_320.scss */
 .links_social li.linkedin a {
   background-position: -153px -1px;
 }
 
-/* line 251, ../scss/_320.scss */
+/* line 304, ../scss/_320.scss */
 .links_social li.facebook a {
   background-position: -153px -30px;
 }
 
-/* line 252, ../scss/_320.scss */
+/* line 305, ../scss/_320.scss */
 .links_social li.flickr a {
   background-position: -153px -59px;
 }
 
-/* line 253, ../scss/_320.scss */
+/* line 306, ../scss/_320.scss */
 .links_social li.twitter a {
   background-position: -153px -88px;
 }
 
-/* line 254, ../scss/_320.scss */
+/* line 307, ../scss/_320.scss */
 .links_social li.last_fm a {
   background-position: -153px -117px;
 }
 
-/* line 255, ../scss/_320.scss */
+/* line 308, ../scss/_320.scss */
 .links_social li.dribbble a {
   background-position: -153px -146px;
 }
 
-/* line 257, ../scss/_320.scss */
+/* line 310, ../scss/_320.scss */
 .links_social li.linkedin a:hover {
   background-position: -104px -1px;
 }
 
-/* line 258, ../scss/_320.scss */
+/* line 311, ../scss/_320.scss */
 .links_social li.facebook a:hover {
   background-position: -104px -30px;
 }
 
-/* line 259, ../scss/_320.scss */
+/* line 312, ../scss/_320.scss */
 .links_social li.flickr a:hover {
   background-position: -104px -59px;
 }
 
-/* line 260, ../scss/_320.scss */
+/* line 313, ../scss/_320.scss */
 .links_social li.twitter a:hover {
   background-position: -104px -88px;
 }
 
-/* line 261, ../scss/_320.scss */
+/* line 314, ../scss/_320.scss */
 .links_social li.last_fm a:hover {
   background-position: -104px -117px;
 }
 
-/* line 262, ../scss/_320.scss */
+/* line 315, ../scss/_320.scss */
 .links_social li.dribbble a:hover {
   background-position: -104px -146px;
+}
+
+/* line 321, ../scss/_320.scss */
+.img_border {
+  background: #fff;
+  background-size: 100% 100%;
+  border: 9px solid #fff;
+  display: block;
+  position: relative;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 5px;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 5px;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 334, ../scss/_320.scss */
+.img_border:before,
+.img_border:after {
+  background: rgba(0, 0, 0, 0.4);
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 1px;
+  bottom: 5px;
+  width: 20%;
+  max-width: 300px;
+  height: 60%;
+  -moz-transform: skew(-18deg) rotate(-16deg);
+  -webkit-transform: skew(-18deg) rotate(-16deg);
+  -o-transform: skew(-18deg) rotate(-16deg);
+  -ms-transform: skew(-18deg) rotate(-16deg);
+  transform: skew(-18deg) rotate(-16deg);
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 20px 30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 20px 30px;
+  -o-box-shadow: rgba(0, 0, 0, 0.8) 0 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 20px 30px;
+}
+
+/* line 349, ../scss/_320.scss */
+.img_border:after {
+  left: auto;
+  right: 1px;
+  -moz-transform: skew(18deg) rotate(16deg);
+  -webkit-transform: skew(18deg) rotate(16deg);
+  -o-transform: skew(18deg) rotate(16deg);
+  -ms-transform: skew(18deg) rotate(16deg);
+  transform: skew(18deg) rotate(16deg);
+}
+
+/* line 357, ../scss/_320.scss */
+.img_border:hover:before,
+.img_border:hover:after {
+  -moz-box-shadow: black 0 17px 27px;
+  -webkit-box-shadow: black 0 17px 27px;
+  -o-box-shadow: black 0 17px 27px;
+  box-shadow: black 0 17px 27px;
+}
+
+/* line 359, ../scss/_320.scss */
+.img_border .ribbon_new {
+  right: -10px;
+  top: -10px;
+}
+
+/* line 364, ../scss/_320.scss */
+.img_border .img_wrap {
+  overflow: hidden;
+  position: relative;
+  -moz-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 6px;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 6px;
+  -o-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 6px;
+  box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 6px;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
