@@ -569,7 +569,7 @@ h1 a span {
 }
 
 /* line 323, ../scss/_320.scss */
-.timer ul li {
+.ie7 .timer ul li {
   float: left;
 }
 
