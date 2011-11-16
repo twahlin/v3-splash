@@ -85,5 +85,13 @@
     }
     window.onload = externalLinks;
     //end external links
+    
+    //Hide iphone bar
+    window.addEventListener("load",function() {
+        setTimeout(function(){
+            window.scrollTo(0, 1);
+        }, 0);
+    });
+    //End Hide iphone bar
 
 })();                   

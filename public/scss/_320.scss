@@ -31,13 +31,14 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 { 
+    padding-top: 20px;
   text-align: center;
     color: #666;
-    font-size: 30px;
-    line-height: 76px;
+    font-size: 26px;
+    line-height: 36px;
     
   @include proxima_regular;
-      @include white_text_shadow_top;
+  @include white_text_shadow_top;
 }
 
 h5 {
@@ -70,7 +71,7 @@ p {
 }
 
 .wrap_inner {
-    padding: 20px 0 50px 0;  
+    padding: 0;  
 }
 
 //------------------------------------------------------------------
@@ -93,6 +94,7 @@ p {
 }
 
 .v2 a {
+    background: #6caddf;
   color: #fff;
   display: block;
   padding: 7px;
@@ -108,38 +110,11 @@ p {
 //Main Container
 //------------------------------------------------------------------
 
-.pane_wrapper:before,
-.pane_wrapper:after {
-  background: rgba(0, 0, 0, .4);
-	content: '';
-	z-index: -1;
-	position: absolute;
-	left: 1px;
-	bottom: 5px;
-	width: 20%;
-	max-width: 300px;
-	height: 60%;
-	
-	@include transform(skew(-18deg) rotate(-16deg));
-	@include box-shadow(rgba(0, 0, 0, 0.8) 0 20px 30px);
-}
-
-.pane_wrapper:after {
-  left: auto;
-	right: 1px;
-
-	@include transform(skew(18deg) rotate(16deg));
-}
-
 .experience_container {
-    background: #fefefe image-url('bg_diagonal_lines.png') center;
-    border: 8px solid #fff;
-    height: 370px;
+    background: #fff image-url('bg_diagonal_lines.png') center;
     margin: 0 auto;
     position: relative;
-    width: 370px; 
   
-  	@include box-shadow(rgba(0, 0, 0, 0.4) 0 2px 8px, inset rgba(0, 0, 0, 0.25) 0 1px 3px);
     @include background(image-url('bg_diagonal_lines.png'), radial-gradient(rgba(255, 255, 255, 1), rgba(230, 230, 230, 1) 500px));  	      
 }
 
@@ -239,14 +214,13 @@ h1 a span {
 //------------------------------------------------------------------
 
 .timer {
-  padding-top: 227px;
+  padding-top: 279px;
 }
 
 .timer ul {
   border: 1px solid #fff;
   border-bottom: 2px solid #6caddf;
   display: block;
-  margin: 0 30px 0 30px;
   overflow: hidden; 
   padding: 10px 0 8px 0; 
   text-align: center;
@@ -274,24 +248,6 @@ h1 a span {
   font-size: 20px;
   font-style: normal; 
 }
-
-.timer .days {
-
-}
-
-.timer .hours {
-    
-}
-
-.timer .minutes {
-
-}
-
-.timer .seconds {
-
-}
-
-
 
 //------------------------------------------------------------------
 //Img Border
@@ -352,53 +308,20 @@ h1 a span {
 //Social Links
 //------------------------------------------------------------------
 
-.links_social li {
-	display: block;
-    margin-bottom: 15px; 
-	width: 100%;
-	
-	@include proxima_regular;
+.links_social {
+    display: none;
 }
 
-.links_social li a {
-    display: block;   
-    overflow: visible;
-	position: relative;
-    width: 100%;    
+//------------------------------------------------------------------
+//ie8
+//------------------------------------------------------------------
+.ie7 h1 a,
+.ie8 h1 a {
+   background: transparent;
 }
 
-.links_social li a .button { 
-    display: block;
-    font-size: 16px;
-    height: 36px;
-    line-height: 38px;
-    padding: 0 0 0 42px;
-    
-    @include proxima_regular;
+.timer ul li {
+  float: left;
 }
 
-.links_social li a span {
-    background-image: image-url('png_master_sprite.png');
-	display: block;
-    height: 0;
-	left: 11px;
-	overflow: hidden;
-	padding: 22px 0 0 0;	
-	position: absolute;
-	top: 8px;
-	width: 22px;
-	
-	@include opacity(0.85);
-    @include transition_default;
-}
 
-.links_social li a:hover span {
-	@include opacity(1);
-}
-
-.links_social .dribbble span { background-position: 0px -95px; }
-.links_social .facebook span { background-position: -1px -142px; }
-.links_social .flickr span { background-position: 0px -190px; }
-.links_social .linkedin span { background-position: -1px -239px; }
-.links_social .last_fm span { background-position: -1px -285px; }
-.links_social .twitter span { background-position: 0px -333px; }

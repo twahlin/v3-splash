@@ -30,7 +30,6 @@
 
 <body>
   <div class="wrap">
-    
       <div class="v2"><a href="http://v2.tomwahlin.com">&laquo; View tomwahlin.com Version Two</a></div>
       <div class="wrap_inner">
       <div class="experience_container">
