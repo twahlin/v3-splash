@@ -31,10 +31,13 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 { 
+  text-align: center;
     color: #666;
-    font-size: 60px;
-    line-height: 72px;
-    padding: 2.4% 0 0 2.4%; 
+    font-size: 30px;
+    line-height: 76px;
+    
+  @include proxima_regular;
+      @include white_text_shadow_top;
 }
 
 h5 {
@@ -64,27 +67,41 @@ p {
 .wrap {
     background: image-url('bg_noise_transparent.png') center;
     min-height: 100%;
-    padding-top: 180px;
 }
+
+.wrap_inner {
+    padding: 20px 0 50px 0;  
+}
+
+//------------------------------------------------------------------
+//Buttons
+//------------------------------------------------------------------
+
+.button,
+.button:visited { @include button }
+
+.button:hover { @include button_hover }
+
+.button:active { @include button_active }
 
 //------------------------------------------------------------------
 //V2 Ribbon
 //------------------------------------------------------------------
 
 .v2 {
-  position: fixed;
-  top: 0;
-  left: 0;
 
 }
 
 .v2 a {
-  background: image-url('png_splash_sprite.png') -82px -270px;
+  color: #fff;
   display: block;
-  height: 0;
-  overflow: hidden;
-  padding-top: 155px;
-  width: 155px;  
+  padding: 7px;
+  font-size: 14px;
+  text-align: center;
+  
+  @include blue_text_shadow_top;
+  @include gradient_solid_standard;
+  @include proxima_regular;
 }
 
 //------------------------------------------------------------------
@@ -125,14 +142,6 @@ p {
   	@include box-shadow(rgba(0, 0, 0, 0.4) 0 2px 8px, inset rgba(0, 0, 0, 0.25) 0 1px 3px);
     @include background(image-url('bg_diagonal_lines.png'), radial-gradient(rgba(255, 255, 255, 1), rgba(230, 230, 230, 1) 500px));  	      
 }
-
-/*.experience_container:before {
-     background: aqua;
-     content: "";
-     display: block;
-     width: 100%;
-     height: 100%;
-}*/
 
 .pane {
     display: block;
@@ -230,15 +239,40 @@ h1 a span {
 //------------------------------------------------------------------
 
 .timer {
-  padding-top: 300px;
+  padding-top: 227px;
+}
+
+.timer ul {
+  border: 1px solid #fff;
+  border-bottom: 2px solid #6caddf;
+  display: block;
+  margin: 0 30px 0 30px;
+  overflow: hidden; 
+  padding: 10px 0 8px 0; 
+  text-align: center;
+  
+  @include background(#fff linear-gradient(rgba(255,255,255, .1), rgba(0,0,0, .05)));
+  @include box-shadow(rgba(0, 0, 0, .2) 0 0 5px);
 }
 
 .timer li {
- float: left;    
+  color: #333;
+  display: inline-block;
+  font-size: 14px;
+  position: relative;
+  text-transform: lowercase;
+  font-variant: small-caps; 
+  margin: 0 16px;
+  
+  @include white_text_shadow_bottom;
+  @include proxima_regular;
 }
 
 .timer li em {
-    
+  color: #666;
+  display: block;
+  font-size: 20px;
+  font-style: normal; 
 }
 
 .timer .days {
@@ -257,62 +291,7 @@ h1 a span {
 
 }
 
-//------------------------------------------------------------------
-//Social Links
-//------------------------------------------------------------------
 
-.links_social {
-	display: block;
-	overflow: hidden;
-	position: absolute;
-	left: -44px;
-	padding-left: 6px;
-	top: 5%;
-	width: 29px;
-}
-
-.links_social li {
-    margin: 0 0 2px 0;
-}
-
-.links_social li a {
-	background: image-url('png_splash_sprite.png');    
-	display: block;
-	height: 0;
-	overflow: hidden;
-	padding-top: 28px;
-	position: relative;
-	width: 42px;
-	
-	@include opacity(0.4);
-	@include transition-property(margin);
-	@include transition-duration(0.1s);
-	@include transition-timing-function(ease-in);	
-}
-
-.links_social li a em {
-	display: none;
-}
-
-
-.links_social li a:hover {
-  margin-left: -3px;
-	opacity: 1;
-}
-
-.links_social li.linkedin a { background-position: -153px -1px; }
-.links_social li.facebook a { background-position: -153px -30px; }
-.links_social li.flickr a { background-position: -153px -59px; }
-.links_social li.twitter a { background-position: -153px -88px;}
-.links_social li.last_fm a { background-position: -153px -117px; }
-.links_social li.dribbble a { background-position: -153px -146px; }
-
-.links_social li.linkedin a:hover { background-position: -104px -1px; }
-.links_social li.facebook a:hover { background-position: -104px -30px; }
-.links_social li.flickr a:hover { background-position: -104px -59px; }
-.links_social li.twitter a:hover { background-position: -104px -88px;}
-.links_social li.last_fm a:hover { background-position: -104px -117px; }
-.links_social li.dribbble a:hover { background-position: -104px -146px; }
 
 //------------------------------------------------------------------
 //Img Border
@@ -369,10 +348,57 @@ h1 a span {
     @include transition_default; 	
 }
 
+//------------------------------------------------------------------
+//Social Links
+//------------------------------------------------------------------
 
+.links_social li {
+	display: block;
+    margin-bottom: 15px; 
+	width: 100%;
+	
+	@include proxima_regular;
+}
 
+.links_social li a {
+    display: block;   
+    overflow: visible;
+	position: relative;
+    width: 100%;    
+}
 
+.links_social li a .button { 
+    display: block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 38px;
+    padding: 0 0 0 42px;
+    
+    @include proxima_regular;
+}
 
+.links_social li a span {
+    background-image: image-url('png_master_sprite.png');
+	display: block;
+    height: 0;
+	left: 11px;
+	overflow: hidden;
+	padding: 22px 0 0 0;	
+	position: absolute;
+	top: 8px;
+	width: 22px;
+	
+	@include opacity(0.85);
+    @include transition_default;
+}
 
+.links_social li a:hover span {
+	@include opacity(1);
+}
 
-
+.links_social .dribbble span { background-position: 0px -95px; }
+.links_social .facebook span { background-position: -1px -142px; }
+.links_social .flickr span { background-position: 0px -190px; }
+.links_social .linkedin span { background-position: -1px -239px; }
+.links_social .last_fm span { background-position: -1px -285px; }
+.links_social .twitter span { background-position: 0px -333px; }
